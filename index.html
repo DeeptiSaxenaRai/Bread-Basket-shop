@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery-Shop</title>
+    
+    <!-- Add the Internal CSS -->
+    <style>
+
+      /* Use google fonts to design the column left */
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+      
+      /* Use google fonts to design the column right */
+      @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+      
+      /* To design the body */
+      body {
+        background-color: rgb(235, 246, 242);
+        color: rgb(84, 21, 21);
+      }
+      /* To center the layout of all div elements  */
+      .container {
+        margin: auto;
+        width: 97%;
+      }
+      /* To remove default css properties*/
+      * {
+        box-sizing: border-box;
+      }
+
+      /* To design the pre tag */
+      pre {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      .column {
+        color: white;
+        float: left;
+        padding: 5px;
+        height: 75px;
+      }
+      /* set the width of left column */
+      .left {
+        width: 24%;
+      }
+      /* set the width of right column */
+      .right {
+        width: 76%;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* To define the Menu list properties */
+      .MainMenu li {
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+       /* To define the Sticky list properties */
+       .Sticky {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(141, 39, 39);
+        text-align: left;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+       }
+       
+      /* To set the hyperlink in list tag */
+      a {
+        color: rgb(244, 230, 230);
+        padding: 15px 85px;
+        text-align: center;
+        font-family: "Fuzzy Bubbles", cursive;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      /* Change the color of content when mouse is over on it */
+      a:hover {
+        color: coral;
+      }
+
+      /* Design the H1 and h2 heading */
+      h1,
+      h2 {
+        font-family: "Pacifico", cursive;
+        text-align: center;
+        padding: auto;
+        margin-top: auto;
+      }
+       /* To design the description list */
+      dl {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(84, 21, 21);
+      }
+       /* To give the color of dt tag */
+      dd {
+        color: rgb(140, 75, 75);
+      }
+
+      /* To Set the lower section */
+      .LowerS {
+        display: inline-flex;  
+      }
+      /* To set the lower section left side */
+      .LeftS {
+        width: 550px;
+        text-align: left;
+        margin-right: 50px;
+        padding: 20px;
+      }
+      /* To set the lower section right side */
+      .RightS {
+        border: 2px solid rgb(84, 21, 21);
+        width: 450px;
+        Height: 200px;
+        overflow: auto;
+        margin-left: 100px;
+        margin-top: 35px;
+        
+      }
+      /* Set the division A with sticky position */
+       div.A {
+       position: -webkit-sticky;
+       position: sticky;
+       top: 0;
+       padding: 5px;
+       background-color: rgb(141, 39, 39);
+       border: 2px solid  rgb(84, 21, 21);
+       color:white;
+       }
+      /* To set the division B with sticky position */
+      div.B {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      padding: 5px;
+      background-color:rgb(141, 39, 39);
+      border: 2px solid rgb(84, 21, 21);
+      color:white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Main division with class container -->
+    <div class="container">
+      <div>
+        <pre>
+        To Order Now call: +47 45123456 | Express Delivery available in Bergen </pre
+        >
+      </div>
+      <div class="row">
+        <div class="column left" style="background-color: rgb(91, 4, 4)">
+          <h1>Bread Basket</h1>
+        </div>
+
+        <div class="column right" style="background-color: rgb(141, 39, 39)">
+          <ul class="MainMenu">
+            <li><a href="#Shopping">Shop Online</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Aboutus">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- video credit from youtube bread basket advertisement-->
+      <iframe
+        width="100%"
+        height="360"
+        src="https://www.youtube.com/embed/XNXuwrXFHRs?controls=0"
+        title="Bread Basket - Advertisement Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="LowerS">
+        <div class="LeftS">
+          <h2 style="text-align:left;">Our Popular Breads & Cakes</h2>
+          <dl>
+            <dt>Banana Bread</dt>
+            <dd>To make the most of ripe bananas</dd>
+            <dt>Pumpkin Bread</dt>
+            <dd>Delicious pumpkin with nuts</dd>
+            <dt>Cheese Cake</dt>
+            <dd>Freash fruits with no baking</dd>
+            <dt>Lemon Cake</dt>
+            <dd>Soft with lots of butter and lemon zest</dd>
+          </dl>
+        </div>
+        <div class="RightS">
+          <h2>Our Satisfied Customers List</h2>
+          <div class="A">A</div>
+          <div style="padding-bottom: 100px">
+            <ul class="Sticky">
+              <li>Arnav</li>
+              <li>Ayansh</li>
+              <li>Aryan</li>
+              <li>Ahana</li>
+              <li>Aanya</li>
+              <li>Anvi</li>
+            </ul>
+          </div>
+          <div class="B">B</div>
+          <div style="padding-bottom:100px">
+            <ul class="Sticky">
+              <li>Beenu</li>
+              <li>Banita</li>
+              <li>Bhanu</li>
+              <li>Bhaki</li>   
+            </ul>
+          </div>
+       </div>
+    </div>
+  </body>
+</html>
